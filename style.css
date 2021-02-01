@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.9;
+}
+
 main {
     display: flex;
     align-items: center; /* axe vertical */
@@ -13,6 +20,7 @@ main {
 }
 
 .glass {
+    display: flex;
     min-height: 70vh;
     width: 60%;
     background: linear-gradient(
@@ -43,4 +51,51 @@ main {
 .circle2 {
     bottom: 5%;
     left: 12%;
+}
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+}
+
+.games {
+    flex: 2;
+}
+
+.link {
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+}
+
+.link h2 {
+    padding: 0rem 2rem;
+}
+
+.pro {
+    background: linear-gradient(to right top, #f1a8f8, #6c8eeb);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    position: relative;
+}
+
+.pro img {
+    position: absolute;
+    top: -28%;
+    left: 43%;
+}
+
+.pro h2 {
+    width: 40%;
 }
