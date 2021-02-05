@@ -1,7 +1,7 @@
 # STEPS
 0. Create the propotype in Figma (see another video?)
 1. Code the glass thing
-2. Code the content
+2. Code the content: Dashboard & Games
 
 ## In more details
 1. Code the background
@@ -20,7 +20,7 @@
         + Search bar
         + Cards which contains each an image, a text, a progress bar and a percentage (class card-info)
     2.3 Make all design things in CSS
-    2.4 Change font to Poppins Regular 400
+    2.4 Change font to Poppins Regular 600
 
 # Questions ?
 * What is a vh?
@@ -44,7 +44,14 @@
 > `text-align: center` in .dashboard
 
 * How to make .pro img relative to div pro?
-> `positon: relative in .pro and position: absolute in .pro img`
+> `positon: relative` in .pro and position: absolute in .pro img
+
+* What is the difference between font-size and font-weight?
+> Weight is if font is more or less bold and Size is height of font.
+
+* How to clip the background to the text ?
+> `-webkit-background-clip: text;` and `-webkit-text-fill-color: transparent;`
 
 # Tips
 * Set opacity to title for a better "glass" effect.
+* `overflow: hidden` to hide something going outside its div as progress::after does.

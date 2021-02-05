@@ -6,12 +6,26 @@
 
 h1 {
     color: #426696;
-    font-weight: 600;
     font-size: 3rem;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+h2,
+p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+h3 {
+    color: #426696;
+    font-weight: 600;
     opacity: 0.9;
 }
 
 main {
+    font-family: "Poppins", sans-serif;
     display: flex;
     align-items: center; /* axe vertical */
     justify-content: center; /* axe horizontal */
@@ -53,6 +67,8 @@ main {
     left: 12%;
 }
 
+/* DASHBOARD */
+
 .dashboard {
     flex: 1;
     display: flex;
@@ -85,7 +101,7 @@ main {
     background: linear-gradient(to right top, #f1a8f8, #6c8eeb);
     border-radius: 2rem;
     color: white;
-    padding: 1rem;
+    padding: 3px;
     display: flex;
     position: relative;
 }
@@ -98,4 +114,86 @@ main {
 
 .pro h2 {
     width: 40%;
+    color: white;
+    font-weight: 600;
+}
+
+/* GAMES */
+
+.games {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2rem 0rem;
+}
+
+.status {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0rem 5rem;
+}
+
+.status input {
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.3));
+    border: none;
+    width: 40%;
+    height: 30%;
+    padding: 0.3rem;
+    border-radius: 2rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content:space-between;
+    background: linear-gradient(
+        to left bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.2));
+    margin: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.5);
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.percentage {
+    font-weight: bold;
+    background: linear-gradient(to right top, #f1a8f8, #6c8eeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.progress {
+    background: linear-gradient(to right top, #f1a8f8, #6c8eeb);
+    width: 100%;
+    height: 15%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 60%;
+
 }
